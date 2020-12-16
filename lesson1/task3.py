@@ -10,4 +10,4 @@ result = []
 for i in range(num):
     result.append(int(str(num)*(i+1)))
 
-print(f'{" + ".join(map(lambda num: str(num), result))} = {sum(result)}')
+print(f'{" + ".join(map(lambda num: str(num), result)) if num > 0 else 0} = {sum(result)}')
