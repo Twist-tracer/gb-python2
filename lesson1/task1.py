@@ -1,0 +1,10 @@
+num1 = int(input('Введите число 1: '))
+num2 = int(input('Введите число 2: '))
+str1 = input('Введите строку 1: ')
+str2 = input('Введите строку 2: ')
+
+print('Вы ввели:')
+print(f'Число: {num1}')
+print(f'Число 2: {num2}')
+print(f'Строку: {str1}')
+print(f'Строку 2: {str2}')
