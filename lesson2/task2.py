@@ -1,16 +1,13 @@
 items = input('Укажите элементы списка через запятую: ').split(',')
 
-items_copy = items.copy()
 for k, v in enumerate(items):
     if len(items) % 2 == 0 or k != (len(items) - 1):
         if k % 2 == 0:
-            items_copy[k + 1] = v
+            items.append(v)
         else:
-            items_copy[k - 1] = v
+            items[k - 1] = v
+            items[k] = items.pop()
     else:
-        items_copy[k] = v
-
-items = items_copy.copy()
-del items_copy
+        items[k] = v
 
 print(items)
